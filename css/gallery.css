@@ -1,0 +1,202 @@
+
+
+/*=======================================
+= General Styles
+=======================================*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #262626;
+}
+
+.galler-container {
+	width: 100%;
+	height: 100vh;
+}
+
+.fa {
+	color: #B39912;
+	margin: 0 5px 30px 5px;
+}
+
+.main-header {
+	width:100%;
+	color: white;
+	text-align: center;
+	margin: 0;
+	padding: 2em 0 3em 0;
+}
+
+.main-title {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.125em;
+	font-weight: 100;
+	border-top: 2px solid #00e6e6;
+	padding-top: 1.5rem;
+}
+
+.sub-title {
+	color: #a6a6a6;
+	font-size: 1em;
+	font-weight: 100;
+	margin: 0;
+	text-transform: ;
+	border-bottom: 2px solid #fff;
+	padding-bottom: 1rem;
+}
+
+.pic-container {
+	width: 50%;
+	float: left;
+	padding: 0 0px;
+	margin: 0 0 -4px 0;
+}
+
+.img img{
+	width: 100%;
+	height: auto;
+}
+
+.img:hover {
+	opacity: .7;
+}
+
+.main-footer {
+	font-weight: 300;
+	padding: 4.5em 0;
+	color: #a6a6a6;
+	text-align: center;
+}
+
+.main-footer i {
+	transition: all .2s;
+}
+
+.main-footer i:hover {
+	color: white;
+}
+
+.main-footer p {
+	margin: 0;
+}
+
+.footer-content {
+	font-size: .85em;
+}
+
+.footer-content:after{
+	content: " Elliot Richardson";
+	text-transform: uppercase;
+	color: white;
+}
+
+.copy {
+	margin: 0;
+	padding: 0 0 3em 0;
+	font-size: .75em;
+}
+
+
+/*============================================
+= Clearfix for floats
+============================================*/
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
+/*=======================================
+= Media Queries
+=======================================*/
+
+@media (min-width:480px){
+	.main-title {
+		text-transform: uppercase;
+		font-size: 1.75em;
+		border-top: 2px solid #00e6e6;
+	}
+
+	.sub-title {
+		color: #a6a6a6;
+		font-size: 1.125em;
+		margin: 0;
+		border-bottom: 2px solid #fff;
+	}
+}
+
+@media (min-width:600px){
+	.pic-container {
+		width: 49.9999%;
+	}
+
+	.main-title {
+		text-transform: uppercase;
+		font-size: 2.125em;
+	}
+
+	.sub-title {
+		color: #a6a6a6;
+		font-size: 1.5em;
+		margin: 0;
+	}
+}
+
+@media (min-width:768px){
+	.main-header {
+		margin: 0;
+	}
+
+	.pic-container {
+		width: 24.999%;
+	}
+
+	.main-title {
+		text-transform: uppercase;
+		font-size: 2.75em;
+	}
+}
+
+@media (min-width:1200px){
+	.gallery-container {
+		margin: 0 auto;
+		width: 70%;
+	}
+
+	.pic-container {
+		width: 25%;
+	}
+}
+
+@media (min-width:1600px){
+	.gallery-container {
+		width: 60%;
+	}
+
+	.main-footer p {
+		display: inline-block;
+	}
+
+	/*TARGET THE TYPE P SELECTOR TO GIVE IT MARGIN ON THE FULL SCREEN VIEW*/
+	p:nth-of-type(1) {
+		margin-left: 1.5rem;
+	}
+
+}
+
+
+
+
+
+
+
